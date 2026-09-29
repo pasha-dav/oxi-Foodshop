@@ -11,13 +11,8 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700;800&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-      integrity="sha512-4xo8blKMVCiXpTaLzQx6d/x8hWehZe0292gHjcI0tH4ZEOB1Zq2n2qHqBvF2C1r82w7aE8LofZ/R1o1T1b+Caw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" />
+
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
@@ -240,7 +235,7 @@
       </section>
     </main>
 
-    <footer id="footer" class="footer">
+    <footer id="contacts" class="footer">
       <div class="container footer-container">
         <div class="footer-logo-wrap">
           <a href="./index.html" class="logo footer-logo">
@@ -306,7 +301,6 @@
           </form>
         </div>
       </div>
-    </footer>
 
     <div class="mobile-menu" id="mobile-menu">
       <div class="mobile-menu-container">
@@ -368,6 +362,7 @@
       </div>
     </div>
 
+  <section class="modals">
     <div class="backdrop" id="modal">
       <div class="modal">
         <button type="button" class="modal-close-btn">
@@ -376,6 +371,10 @@
           </svg>
         </button>
         <p class="modal-title">Залиште свої дані для доставки продуктів</p>
+        <div class="modal-cart-summary">
+          <ul id="modal-cart-list" class="modal-cart-list"></ul>
+            <p class="modal-cart-total-wrap">До сплати: <span id="modal-cart-total">0</span> грн</p>
+        </div>
 
         <form class="modal-form">
           <div class="modal-field">
@@ -462,6 +461,8 @@
         </form>
       </div>
     </div>
+  </section>
     <script src="./js/main.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

@@ -8,6 +8,7 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  z-index: 9999;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -58,7 +59,7 @@
 
 .modal-close-btn:hover,
 .modal-close-btn:focus {
-  background-color: #404bbf;
+  background-color: #219150;
   border: none;
 }
 
@@ -115,7 +116,8 @@
 }
 
 .modal-input:focus {
-  border-color: #4d5ae5;
+  fill: #27ae60 !important;
+  border-color: #27ae60;
 }
 
 .modal-icon {
@@ -123,12 +125,12 @@
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
-  fill: #2e2f42;
+  fill: #27ae60;;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:focus + .modal-icon {
-  fill: #4d5ae5;
+  fill: #27ae60 !important;
 }
 
 .modal-textarea {
@@ -152,7 +154,7 @@
 }
 
 .modal-textarea:focus {
-  border-color: #4d5ae5;
+  border-color: #27ae60;
 }
 
 .modal-field-checkbox {
@@ -183,7 +185,7 @@
 }
 
 .modal-check:checked + .modal-check-label .modal-check-box {
-  background-color: #404bbf;
+  background-color: #27ae60;
   border: none;
   fill: #f4f4fd;
 }
@@ -198,7 +200,7 @@
 }
 
 .privacy-link {
-  color: #4d5ae5;
+  color: #27ae60;
   text-decoration: underline;
 }
 
@@ -214,7 +216,7 @@
   letter-spacing: 0.04em;
   color: #ffffff;
   cursor: pointer;
-  background-color: #4d5ae5;
+  background-color: #27ae60;
   border: none;
   border-radius: 4px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
@@ -223,5 +225,45 @@
 
 .modal-submit-btn:hover,
 .modal-submit-btn:focus {
-  background-color: #404bbf;
+  background-color: #219150;
+}
+.modal-cart-summary {
+  background-color: #eafaf1;
+  border: 1px solid #27ae60;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+.modal-cart-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 12px 0;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.modal-cart-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+  border-bottom: 1px dashed #a8e6b3;
+  font-size: 14px;
+  color: #434455;
+}
+
+.modal-cart-total-wrap {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 16px;
+  color: #2e2f42;
+  margin: 0;
+  padding-top: 8px;
+  border-top: 2px solid #27ae60;
+}
+.modals {
+  pointer-events: none;
 }

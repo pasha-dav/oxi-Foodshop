@@ -3,11 +3,14 @@
 *::after {
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
-  background-color: #f4f9f4;
+  background-color: #c8f6dc; 
   margin: 0;
 }
 
