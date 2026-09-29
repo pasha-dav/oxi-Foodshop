@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OXI</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700;800&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQx6d/x8hWehZe0292gHjcI0tH4ZEOB1Zq2n2qHqBvF2C1r82w7aE8LofZ/R1o1T1b+Caw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header id="header" class="header">
+      <div class="container header-container">
+        <a href="./index.html" class="logo">
+          OXI
+        </a>
+
+        <button class="menu-toggle js-open-menu" type="button">
+          <svg class="menu-toggle-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="./index.html" class="nav-link current">Головна</a></li>
+            <li><a href="#portfolio" class="nav-link">Каталог</a></li>
+            <li><a href="#contacts" class="nav-link">Контакти</a></li>
+          </ul>
+        </nav>
+
+        <address class="contacts">
+          <ul class="contacts-list">
+            <li>
+              <a href="mailto:hello@OXI.com" class="contact-link"
+                >hello@OXI.com</a
+              >
+            </li>
+            <li>
+              <a href="tel:+110001111111" class="contact-link"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+        <div class="cart-wrapper">
+          <button type="button" class="cart-toggle-btn" id="cart-toggle">
+            🛒 Кошик (<span id="cart-count">0</span>)
+          </button>
+          <div class="cart-dropdown" id="cart-dropdown">
+            <p class="cart-title">Ваше замовлення</p>
+            <ul id="cart-items" class="cart-items-list"></ul>
+            <p class="cart-total-wrap">Всього: <span id="cart-total">0</span> грн</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </header>
+
+    <main>
+      <section id="hero" class="hero">
+        <div class="container">
+          <h1 class="hero-title">Свіжі та органічні продукти з доставкою</h1>
+          <button type="button" class="hero-btn">Почати покупки</button>
+        </div>
+      </section>
+
+      <section id="features" class="section features">
+        <div class="container">
+          <h2 class="sr-only">Наші переваги</h2>
+          <ul class="features-list">
+            <li class="features-item">
+              <div class="features-icon-wrap">
+                <svg class="features-icon" width="64" height="64">
+                  <use href="./images/icons.svg#icon-antenna"></use>
+                </svg>
+              </div>
+              <h3 class="features-subtitle">Фермерська свіжість</h3>
+              <p class="features-text">
+                Щоранку ми постачаємо лише найсвіжіші органічні фрукти та овочі безпосередньо від місцевих фермерів.
+              </p>
+            </li>
+            <li class="features-item">
+              <div class="features-icon-wrap">
+                <svg class="features-icon" width="64" height="64">
+                  <use href="./images/icons.svg#icon-clock"></use>
+                </svg>
+              </div>
+              <h3 class="features-subtitle">Швидка доставка</h3>
+              <p class="features-text">
+                Отримайте щоденні продукти прямо до дверей всього за кілька годин. Жодних черг та витраченого часу.
+              </p>
+            </li>
+            <li class="features-item">
+              <div class="features-icon-wrap">
+                <svg class="features-icon" width="64" height="64">
+                  <use href="./images/icons.svg#icon-diagram"></use>
+                </svg>
+              </div>
+              <h3 class="features-subtitle">Преміальна якість</h3>
+              <p class="features-text">
+                Всі наші продукти проходять ретельну перевірку якості. Ми пропонуємо лише найкращу сертифіковану їжу.
+              </p>
+            </li>
+            <li class="features-item">
+              <div class="features-icon-wrap">
+                <svg class="features-icon" width="64" height="64">
+                  <use href="./images/icons.svg#icon-astronaut"></use>
+                </svg>
+              </div>
+              <h3 class="features-subtitle">Широкий вибір</h3>
+              <p class="features-text">
+                Від свіжої молочної продукції до екзотичних фруктів та випічки — знайдіть усе для здорового харчування.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="portfolio" class="section portfolio">
+        <div class="container">
+          <h2 class="portfolio-title">Наш асортимент</h2>
+          <ul class="portfolio-list">
+            <li class="portfolio-item">
+              <div class="portfolio-cover-wrap">
+                <img
+                  src="./images/apple.jpg"
+                  alt="Органічні яблука Гала"
+                  width="360"
+                />
+                <p class="portfolio-cover-text">
+                  Соковиті, хрусткі та солодкі яблука, вирощені без використання пестицидів.
+                </p>
+              </div>
+              <div class="portfolio-app-content">
+                <h3 class="portfolio-project-name">Органічні яблука Гала</h3>
+                <p class="portfolio-project-type">55 грн за кг</p>
+                <button type="button" class="add-to-cart-btn" data-name="Яблука Гала" data-price="55">Додати в кошик</button>
+              </div>
+            </li>
+            <li class="portfolio-item">
+              <div class="portfolio-cover-wrap">
+                <img
+                  src="./images/spinach.jpg"
+                  alt="Свіжий органічний шпинат"
+                  width="360"
+                />
+                <p class="portfolio-cover-text">
+                  Молоде листя шпинату, зібране вручну на місцевій органічній фермі.
+                </p>
+              </div>
+              <div class="portfolio-app-content">
+                <h3 class="portfolio-project-name">Свіжий шпинат</h3>
+                <p class="portfolio-project-type">60 грн за пучок</p>
+                <button type="button" class="add-to-cart-btn" data-name="Шпинат" data-price="60">Додати в кошик</button>
+              </div>
+            </li>
+            <li class="portfolio-item">
+              <div class="portfolio-cover-wrap">
+                <img
+                  src="./images/egg.jpg"
+                  alt="Органічні яйця"
+                  width="360"
+                />
+                <p class="portfolio-cover-text">
+                  Свіжі яйця від курей вільного вигулу, вигодованих виключно натуральними кормами.
+                </p>
+              </div>
+              <div class="portfolio-app-content">
+                <h3 class="portfolio-project-name">Домашні яйця</h3>
+                <p class="portfolio-project-type">95 грн за десяток</p>
+                <button type="button" class="add-to-cart-btn" data-name="Яйця" data-price="95">Додати в кошик</button>
+              </div>
+            </li>
+            <li class="portfolio-item">
+              <div class="portfolio-cover-wrap">
+                <img
+                  src="./images/milk.jpg"
+                  alt="Органічне мигдальне молоко"
+                  width="360"
+                />
+                <p class="portfolio-cover-text">
+                  Натуральне рослинне молоко без додавання цукру — ідеальне доповнення для кави.
+                </p>
+              </div>
+              <div class="portfolio-app-content">
+                <h3 class="portfolio-project-name">Мигдальне молоко</h3>
+                <p class="portfolio-project-type">135 грн за літр</p>
+                <button type="button" class="add-to-cart-btn" data-name="Мигдальне молоко" data-price="135">Додати в кошик</button>
+              </div>
+            </li>
+            <li class="portfolio-item">
+              <div class="portfolio-cover-wrap">
+                <img
+                  src="./images/honey.jpg"
+                  alt="Сирий органічний мед"
+                  width="360"
+                />
+                <p class="portfolio-cover-text">
+                  Нефільтрований мед прямо з пасіки — натуральний, солодкий та дуже корисний.
+                </p>
+              </div>
+              <div class="portfolio-app-content">
+                <h3 class="portfolio-project-name">Сирий органічний мед</h3>
+                <p class="portfolio-project-type">220 грн за банку</p>
+                <button type="button" class="add-to-cart-btn" data-name="Мед" data-price="220">Додати в кошик</button>
+              </div>
+            </li>
+            <li class="portfolio-item">
+              <div class="portfolio-cover-wrap">
+                <img
+                  src="./images/bread.jpg"
+                  alt="Цільнозерновий органічний хліб"
+                  width="360"
+                />
+                <p class="portfolio-cover-text">
+                  Домашній хліб на заквасці, випечений з органічного цільнозернового борошна.
+                </p>
+              </div>
+              <div class="portfolio-app-content">
+                <h3 class="portfolio-project-name">Цільнозерновий хліб</h3>
+                <p class="portfolio-project-type">75 грн за буханець</p>
+                <button type="button" class="add-to-cart-btn" data-name="Хліб" data-price="75">Додати в кошик</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="container footer-container">
+        <div class="footer-logo-wrap">
+          <a href="./index.html" class="logo footer-logo">
+            OXI
+          </a>
+          <p class="footer-text">
+            Їжте здорово, живіть краще. Ми доставляємо найкращі органічні продукти прямо до вашого столу.
+          </p>
+        </div>
+
+        <div class="footer-social-wrap">
+          <p class="footer-social-title">Слідкуйте за нами</p>
+          <ul class="socials-list">
+            <li class="socials-item">
+              <a href="https://www.instagram.com" class="socials-link" target="_blank" rel="noopener noreferrer">
+                <svg class="socials-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-item">
+              <a href="https://twitter.com" class="socials-link" target="_blank" rel="noopener noreferrer">
+                <svg class="socials-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-item">
+              <a href="https://www.facebook.com" class="socials-link" target="_blank" rel="noopener noreferrer">
+                <svg class="socials-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-socials-item">
+            <a href="https://www.cristianoronaldo.com/" class="socials-link" target="_blank" rel="noopener noreferrer" style="background-color: #4caf50 !important;">
+              <svg class="mobile-socials-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+          </ul>
+        </div>
+
+        <div class="footer-subscribe-wrap">
+          <p class="footer-subscribe-title">Отримуйте пропозиції</p>
+          <form class="footer-subscribe-form">
+            <label class="footer-subscribe-label">
+              <input
+                type="email"
+                name="subscribe-email"
+                class="footer-subscribe-input"
+                placeholder="E-mail"
+                required
+              />
+            </label>
+            <button type="submit" class="footer-subscribe-btn">
+              Підписатися
+              <svg class="footer-subscribe-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <div class="mobile-menu" id="mobile-menu">
+      <div class="mobile-menu-container">
+        <button class="mobile-menu-close js-close-menu" type="button">
+          <svg class="mobile-menu-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <nav class="mobile-nav">
+          <ul class="mobile-nav-list">
+            <li><a href="./index.html" class="mobile-nav-link current">Головна</a></li>
+            <li><a href="#portfolio" class="mobile-nav-link">Каталог</a></li>
+            <li><a href="#contacts" class="mobile-nav-link">Контакти</a></li>
+          </ul>
+        </nav>
+
+        <address class="mobile-contacts">
+          <ul class="mobile-contacts-list">
+            <li>
+              <a href="tel:+110001111111" class="mobile-contact-link accent">+11 (000) 111-11-11</a>
+            </li>
+            <li>
+              <a href="mailto:hello@OXI.com" class="mobile-contact-link">hello@OXI.com</a>
+            </li>
+          </ul>
+        </address>
+
+        <ul class="mobile-socials-list">
+          <li class="mobile-socials-item">
+            <a href="https://www.instagram.com" class="mobile-socials-link" target="_blank" rel="noopener noreferrer">
+              <svg class="mobile-socials-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-socials-item">
+            <a href="https://twitter.com" class="mobile-socials-link" target="_blank" rel="noopener noreferrer">
+              <svg class="mobile-socials-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-socials-item">
+            <a href="https://www.facebook.com" class="mobile-socials-link" target="_blank" rel="noopener noreferrer">
+              <svg class="mobile-socials-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+            <li class="socials-item">
+              <a href="https://www.linkedin.com" class="socials-link" target="_blank" rel="noopener noreferrer">
+                <svg class="socials-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="backdrop" id="modal">
+      <div class="modal">
+        <button type="button" class="modal-close-btn">
+          <svg class="modal-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="modal-title">Залиште свої дані для доставки продуктів</p>
+
+        <form class="modal-form">
+          <div class="modal-field">
+            <label for="user-name" class="modal-label">Ім'я</label>
+            <div class="modal-input-wrap">
+              <input
+                type="text"
+                name="user-name"
+                id="user-name"
+                class="modal-input"
+                required
+              />
+              <svg class="modal-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-field">
+            <label for="user-phone" class="modal-label">Телефон</label>
+            <div class="modal-input-wrap">
+              <input
+                type="tel"
+                name="user-phone"
+                id="user-phone"
+                class="modal-input"
+                required
+              />
+              <svg class="modal-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-field">
+            <label for="user-email" class="modal-label">Email</label>
+            <div class="modal-input-wrap">
+              <input
+                type="email"
+                name="user-email"
+                id="user-email"
+                class="modal-input"
+                required
+              />
+              <svg class="modal-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-field-comment">
+            <label for="user-comment" class="modal-label">Коментар до доставки</label>
+            <textarea
+              name="user-comment"
+              id="user-comment"
+              class="modal-textarea"
+              placeholder="Наприклад, залиште пакунки біля дверей"
+            ></textarea>
+          </div>
+
+          <div class="modal-field-checkbox">
+            <input
+              type="checkbox"
+              name="user-privacy"
+              id="user-privacy"
+              class="modal-check visually-hidden"
+              value="true"
+              required
+            />
+            <label for="user-privacy" class="modal-check-label">
+              <span class="modal-check-box">
+                <svg class="modal-check-icon" width="10" height="8">
+                  <use href="./images/icons.svg#check-mark"></use>
+                </svg>
+              </span>
+              <span class="modal-check-text"
+                >Я погоджуюся з умовами та положеннями
+                <a href="#" class="privacy-link">Політики конфіденційності</a></span
+              >
+            </label>
+          </div>
+
+          <button type="submit" class="modal-submit-btn">Замовити зараз</button>
+        </form>
+      </div>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
