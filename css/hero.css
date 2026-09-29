@@ -1,7 +1,6 @@
 .hero {
   background-color: #1b2e1f;
   padding: 72px 0;
-  /* Заменили на твою картинку */
   background-image: linear-gradient(rgba(27, 46, 31, 0.7), rgba(27, 46, 31, 0.7)), url("../images/otkrytiye-produktovogo-magazina.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -98,6 +97,6 @@
   .hero {
     max-width: 1440px !important;
     margin: 0 auto !important;
-    background-image: linear-gradient(rgba(27, 46, 31, 0.7), rgba(27, 46, 31, 0.7)), url("/images/otkrytiye-produktovogo-magazina.jpg") !important;
+    background-image: linear-gradient(rgba(27, 46, 31, 0.7), rgba(27, 46, 31, 0.7)), url("../images/otkrytiye-produktovogo-magazina.jpg") !important;  
   }
 }
